@@ -1,0 +1,74 @@
+#catalogo {
+    width: 100vw;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#catalogo h1 {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+#mais-produtos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#mais-produtos .produto {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px 1px var(--blueish-grey);
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mais-produtos .produto:hover {
+    scale: 1.05;
+    box-shadow: 5px 5px 20px 3px var(--blueish-grey);
+}
+
+#mais-produtos .produto img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#mais-produtos .produto .nome-produto {
+    margin: 5px;
+    font-size: 18px;
+}
+
+.precos {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--main-color);
+}
+
+.precos .valor-produto {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.precos .valor-produto.descontado {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.precos .valor-desconto {
+    font-size: 22px;
+    font-weight: 900;
+}

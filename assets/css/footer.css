@@ -1,0 +1,60 @@
+footer {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    width: 100vw;
+    background-color: var(--main-color);
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.horario {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+
+.horario img{
+    height: 150px;
+    margin-top: -30px;
+}
+
+.horario h1 {
+    color: var(--main-bright);
+    font-size: 18px;
+}
+
+.horario p {
+    color: var(--main-bright);
+}
+.central-de-atendimento {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 18px;
+    color: var(--main-bright);
+}
+
+.central-de-atendimento ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.central-de-atendimento ul li {
+    cursor: pointer;
+}
+
+.redes-sociais {
+    color: var(--main-bright);
+}
+
+.redes-sociais h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,137 @@
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    height: 150px;
+    padding: 5px 20px;
+    z-index: 10;
+  }
+  
+  #logo-navbar {
+    height: 150px;
+    cursor: pointer;
+  }
+
+  #busca {
+    display: flex;
+    padding: 0 10px;
+  }
+
+  #busca input {
+    border-radius: 10px 0px 0px 10px;
+    border: none;
+    outline: none;
+    color: var(--main-color);
+    font-size: 20px;
+    padding-left: 15px;
+  }
+
+  #busca button {
+    height: 50px;
+    width: 100px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: var(--blueish-grey);
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  #busca button i {
+    font-size: 26px;
+    color: var(--main-color);
+    background-color: transparent;
+  }
+
+  #navmenu {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+  }
+  
+  #navmenu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 18px;
+    padding: 15px 0;
+    color: var(--main-bright);
+    cursor: pointer;
+  }
+
+  #navmenu li i {
+    font-size: 26px;
+    margin-right: 15px;
+  }
+
+  #navmenu li a {
+    color: var(--blueish-grey);
+  }
+  
+  #navtoggle {
+    width: 40px;
+    height: 40px;
+    border: none;
+    /* color: var(--dark-color); */
+    background: transparent;
+    cursor: pointer;
+    display: none;
+    transition: .3s;
+  }
+  
+  .line-btn {
+    height: 3px;
+    width: 40px;
+    margin: 10px auto;
+    background-color: var(--main-bright);
+    display: block;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    /* transform-origin: center; */
+  }
+  
+  @media (max-width: 768px) {
+    #navtoggle {
+      display: block;
+    }
+  
+    #navtoggle.active-toggle .line-btn:nth-child(2) {
+      width: 0px;
+    }
+  
+    #navtoggle.active-toggle .line-btn:nth-child(1) {
+      transform: translateY(13px) rotate(135deg);
+    }
+  
+    #navtoggle.active-toggle .line-btn:nth-child(3) {
+      transform: translateY(-13px) rotate(-135deg);
+    }
+  
+    #navmenu {
+      position: fixed;
+      right: -100%;
+      top: 10vh;
+      gap: 0;
+      backdrop-filter: blur(10px);
+      background: var(--main-color);
+      text-align: center;
+      flex-direction: column;
+      width: 80%;
+      transition: .4s ease-in-out;
+    }
+  
+    .nav-item {
+      margin: 16px 0;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    #navmenu.active-toggle {
+      right: 0;
+    }
+  }

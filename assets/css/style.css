@@ -1,0 +1,39 @@
+@import url('./navbar.css');
+@import url('./slider.css');
+@import url('./beneficios.css');
+@import url('./top-vendas.css');
+@import url('./newsletter.css');
+@import url('./mais-produtos.css');
+@import url('./footer.css');
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: relative;
+    font-family: Lato;
+    background-color: var(--bright-color);
+  }
+
+  :root {
+    --main-bright: #fff;
+    --dark-color: #000;
+    --main-color: #263b98;
+    --secondary-color: #8991ba;
+    --blueish-grey: #f2f4ff;
+
+  }
