@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>CSN Suplementos</title>
+</head>
+<body>
+
+    <header>
+        <img src="./assets/img/logo.jpg" alt="logo" id="logo-navbar"/>
+
+        <!-- <div id="busca">
+            <input type="text" placeholder="o que voce procura?">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div> -->
+
+        <ul id="navmenu">
+            <!-- <li class="nav-item">Home</li> -->
+            <li class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                <div id="entrada">
+                    <p>Seja bem-vindo(a)!</p>
+                    <a href="">entre</a> ou <a href="">cadastre-se</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <i class="fa-solid fa-phone"></i>
+                <p>Fale Conosco</p>
+            </li>
+            <li class="nav-item">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Carrinho</p>
+
+            </li>
+        </ul>
+        <button onclick="toggle()" id="navtoggle">
+            <span class="line-btn"></span>
+            <span class="line-btn"></span>
+            <span class="line-btn"></span>
+        </button>
+    </header>
+   
+
+    <main>
+       
+        <section id="slider">
+            <div class="slides">
+              <input class="input" type="radio" name="slide" id="slide1" checked />
+              <input class="input" type="radio" name="slide" id="slide2" />
+              <input class="input" type="radio" name="slide" id="slide3" />
+      
+              <div class="slide first-image">
+                <img
+                    src="./assets/img/slideimg1.jpg"
+                    alt="garrafa" />
+              </div>
+              <div class="slide">
+                <img
+                    src="./assets/img/slideimg2.jpg"
+                    alt="loja" />
+              </div>
+              <div class="slide">
+                <img
+                    src="./assets/img/slideimg3.jpg"
+                    alt="camisa" />
+              </div>
+      
+               <!-- BUTTONS SLIDER BODY -->
+          <div class="navigation-bg">
+            <div class="btn-slide1"></div>
+            <div class="btn-slide2"></div>
+            <div class="btn-slide3"></div>
+          </div>
+            </div>
+
+          <div class="navigation">
+            <label class="bar btn-1" for="slide1"></label>
+            <label class="bar btn-2" for="slide2"></label>
+            <label class="bar btn-3" for="slide3"></label>
+        </div>
+        </section>
+
+        <section id="beneficios-display">
+            <div id="cartao" class="beneficio">
+                <i class="fa-solid fa-credit-card"></i>
+                <p>parcelamos em 3x</p>
+            </div>
+            <div id="desconto-pix" class="beneficio">
+                <i class="fa-solid fa-tag"></i>
+                <p>descontos de 10% no pix</p>
+            </div>
+            <div id="entrega" class="beneficio">
+                <i class="fa-solid fa-truck-fast"></i>
+                <p>entrega rapida</p>
+            </div>
+            <div id="site-seguro" class="beneficio">
+                <i class="fa-solid fa-user-shield"></i>
+                <p>site 100% seguro</p>
+            </div>
+        </section>
+
+        <section id="sec-mais-vendidos">
+            <h1>Produtos mais vendidos</h1>
+            <ul id="top-produtos"> <!--
+                <li class="produto">
+                    <img src="./assets/img/products/whey1.png" alt="">
+                    <span class="nome-produto">nome do produto</span>
+                    <span class="precos">
+                        <span class="valor-produto descontado">R$ 5,00</span>
+                        <span class="valor-desconto">R$ 2,00</span>
+                    </span>
+                </li>
+                <li class="produto">
+                    <img src="./assets/img/products/whey1.png" alt="">
+                    <span class="nome-produto">nome do produto</span>
+                    <span class="precos">
+                        <span class="valor-produto">R$ 5,00</span>
+                        <span class="valor-desconto">R$ 2,00</span>
+                    </span>
+                </li>-->
+            </ul>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <h1 id="news">Receba nossas melhores ofertas por e-mail!</h1>
+            <div class="form-news">
+            <input type="text" placeholder="escreva seu e-mail">
+            <button>enviar</button></div>
+        </section>
+
+        <section id="catalogo">
+            <h1>Todos os nossos produtos</h1>
+            <ul id="mais-produtos"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="horario">
+            <img src="./assets/img/logo.ico" alt="">
+
+            <h1 id="horario-footer">
+                Horário de Atendimento SAC</h1>
+               <p>09h - 18h</p>
+            
+        </div>
+            <div class="central-de-atendimento">
+            <ul>
+                <li>Sobre a CSN</li>
+                <li>Fale Conosco</li>
+                <li>Segurança e Privacidade</li>
+                <li>Formas de Pagamento</li>
+                <li>Politicas de Trocas e Devoluçoes</li>
+            </ul>
+        </div>
+        <div class="redes-sociais">
+            <h1>Redes Sociais</h1>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>            
+        </div>
+
+    </footer>
+
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/top-vendas.js"></script>
+    <script src="./assets/js/mais-produtos.js"></script>
+</body>
+</html>
