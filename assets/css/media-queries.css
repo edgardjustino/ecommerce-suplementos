@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+  #navtoggle {
+    display: block;
+  }
+
+  #navtoggle.active-toggle .line-btn:nth-child(2) {
+    width: 0px;
+  }
+
+  #navtoggle.active-toggle .line-btn:nth-child(1) {
+    transform: translateY(13px) rotate(135deg);
+  }
+
+  #navtoggle.active-toggle .line-btn:nth-child(3) {
+    transform: translateY(-13px) rotate(-135deg);
+  }
+
+  #navmenu {
+    position: fixed;
+    right: -100%;
+    top: 10vh;
+    gap: 0;
+    backdrop-filter: blur(10px);
+    background: var(--main-color);
+    text-align: center;
+    flex-direction: column;
+    width: 80%;
+    transition: 0.4s ease-in-out;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #navmenu.active-toggle {
+    right: 0;
+  }
+}
